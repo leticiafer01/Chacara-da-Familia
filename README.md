@@ -27,3 +27,10 @@ Site institucional para divulgação e reserva de uma chácara, com foco em fina
 
 ---
 
+## 🔗 Acesse o Projeto Online
+
+Veja o site funcionando :  
+[🌐 Chácara da Família Online](https://leticiafer01.github.io/Chacara-da-Familia/)
+
+---
+
