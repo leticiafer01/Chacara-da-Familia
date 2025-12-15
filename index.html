@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chácara da Família Gomes</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONTE FIRA SANS CORRETA -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Chácara da família</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav class="glass-nav">
+ <nav class="glass-nav">
     <ul>
-      <li><a href="#inicio"> Início </a></li>
-      <li><a href="#sobre"> Sobre </a></li>
-      <li><a href="#chacaras"> Acomodações </a></li>
-      <li><a href="#contato"> Contato </a></li>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#descricao">Sobre</a></li>
+      <li><a href="#fotos">Acomodações</a></li>
+      <li><a href="#localizacao">Contato</a></li>
     </ul>
   </nav>
 
@@ -25,51 +31,159 @@
     </div>
   </header>
 
-  <section id="chacaras">
-    <h2>Nossas Chácaras</h2>
-    <div class="cards">
-      <div class="card glass-card">
-        <img src="src/Noite1.jpeg" alt="Chácara com piscina">
-        <h3>Chácara com Piscina</h3>
-        <p>Ideal para finais de semana, com piscina e churrasqueira.</p>
-        <span>R$ 800 / dia</span>
+
+  <!-- SOBRE A CHÁCARA -->
+  <section id="descricao" class="features-section">
+    <div class="features-grid">
+
+      <div class="feature-item">
+        <img src="icons/piscina.png" alt="">
+        <h3>PISCINAS</h3>
+        <p>Adulto e Infantil</p>
       </div>
 
-      <div class="card glass-card">
-        <img src="src/Noite2.jpeg" alt="Chácara para eventos">
-        <h3>Chácara para Eventos</h3>
-        <p>Perfeita para festas, casamentos e confraternizações.</p>
-        <span>R$ 1.200 / dia</span>
+      <div class="feature-item">
+        <img src="icons/wifi.png" alt="">
+        <h3>WIFI GRATUITO</h3>
+        <p>Sinal disponível na área</p>
       </div>
 
-      <div class="card glass-card">
-        <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607" alt="Chácara familiar">
-        <h3>Chácara Familiar</h3>
-        <p>Ambiente tranquilo para descanso em família.</p>
-        <span>R$ 600 / dia</span>
+      <div class="feature-item">
+        <img src="icons/lago.png" alt="">
+        <h3>TRILHA NO CÓRREGO</h3>
+        <p>Natureza e água corrente</p>
       </div>
+
+      <div class="feature-item">
+        <img src="icons/quarto.png" alt="">
+        <h3>CASA COMPLETA</h3>
+        <p>5 Quartos (3 Suítes)</p>
+      </div>
+
+      <div class="feature-item">
+        <img src="icons/churrasco.png" alt="">
+        <h3>CHURRASQUEIRA</h3>
+        <p>Área externa equipada</p>
+      </div>
+
     </div>
   </section>
 
-  <section id="sobre" class="sobre">
-    <h2>Sobre a Chácara</h2>
-    <p>
-      A Chácara Paraíso Verde oferece conforto, segurança e contato com a natureza.
-      Ideal para momentos inesquecíveis com quem você ama.
-    </p>
+  <!-- ACOMODAÇÕES -->
+<section id="fotos" class="section">
+  <h2 class="title-acomodacoes">Acomodações</h2>
+
+  <div class="acomodacoes-container">
+
+    <!-- CARD: CASA -->
+    <div class="acomodacao-card">
+      <div class="acomodacao-img-wrapper">
+        <img src="src/Noite1.jpeg" alt="Casa Principal" class="acomodacao-img">
+      </div>
+
+      <div class="acomodacao-content">
+        <h3>Casa Principal</h3>
+        <p>Ambiente completo com 5 quartos, sendo 3 suítes, cozinha equipada e muito conforto para sua estadia.</p>
+        <a href="#" class="acomodacao-btn">Ver mais detalhes ➜</a>
+      </div>
+    </div>
+
+    <!-- CARD: ÁREA DE LAZER -->
+    <div class="acomodacao-card">
+      <div class="acomodacao-img-wrapper">
+        <img src="src/bosque1.jpeg" alt="Área de Lazer" class="acomodacao-img">
+      </div>
+
+      <div class="acomodacao-content">
+        <h3>Área de Lazer</h3>
+        <p>Piscinas, área de churrasco, campo, trilha e muito espaço ao ar livre para relaxar e se divertir.</p>
+        <a href="#" class="acomodacao-btn">Ver mais detalhes ➜</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- AVALIAÇÕES -->
+  <section id="avaliacoes" class="section">
+    <h2>Avaliações</h2>
+
+    <div class="testimonials">
+
+      <div class="card">
+        <div class="stars">★★★★★</div>
+        <p>"Lugar muito aconchegante, gostei bastante, os meninos adoraram o campo de futebol."</p>
+        <span>— Geovana S.</span>
+      </div>
+
+      <div class="card">
+        <div class="stars">★★★★★</div>
+        <p>"Lugar espetacular, calmo, relaxante e divertido."</p>
+        <span>— Divino P.</span>
+      </div>
+
+      <div class="card">
+        <div class="stars">★★★★☆</div>
+        <p>"Muito bom o sítio."</p>
+        <span>— Danilo M.</span>
+      </div>
+
+    </div>
   </section>
 
-  <section id="contato" class="contato">
-    <h2>Contato</h2>
-    <p>
-      📞 (11) 99999-9999<br />
-      📧 contato@chacaraparaisoverde.com
-    </p>
+  <!-- LOCALIZAÇÃO + CONTATO EM CARD -->
+<section id="localizacao" class="section location-contact">
+  <h2>Localização & Contato</h2>
+
+  <div class="loc-contact-container">
+
+    <!-- MAPA EM CARD -->
+    <div class="loc-card">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.0361187258113!2d-48.187698385124225!3d-15.974275537800092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bd70025156dd9%3A0xb02164844b74fb7!2sCh%C3%A1cara%20da%20Fam%C3%ADlia%20Gomes!5e0!3m2!1spt-BR!2sbr!4v1702140000000!5m2!1spt-BR!2sbr"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- CARD DE CONTATO ESTILO RESORT -->
+    <div class="contact-card-new">
+  <h3>Reserve agora e aproveite</h3>
+
+  <p>
+    <img src="icons/itelefone.png" class="icon-img">
+    <strong>Atendimento:</strong> (61) 00000-0000
+  </p>
+
+  <p>
+    <img src="icons/whatsapp (2).png" class="icon-img">
+    <strong>WhatsApp:</strong> (61) 00000-0000
+  </p>
+
+  <p>
+    <img src="icons/instagram.png" class="icon-img">
+    <strong>Instagram:</strong> @chacaradafamiliagomes
+  </p>
+
+  <a href="https://wa.me/5561999999999" class="btn-route">
+    TRAÇAR ROTA ➜
+  </a>
+</div>
+
+
+  </div>
+</section>
+
   </section>
 
-  <footer>
-    <p>&copy; 2025 Chácara Paraíso Verde</p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 Chácara da família - Todos os direitos reservados.</p>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
